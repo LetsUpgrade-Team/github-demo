@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Demo Page</title>
+    
+    <!-- This is an internal CSS style block. No external files needed! -->
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f2f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        header {
+            background-color: #24292e;
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 8px 8px 0 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        main {
+            padding: 20px;
+        }
+        h2 {
+            border-bottom: 2px solid #eaecef;
+            padding-bottom: 10px;
+            margin-top: 30px;
+            color: #24292e;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #dfe2e5;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f6f8fa;
+            font-weight: 600;
+        }
+        tr:nth-child(even) {
+            background-color: #f6f8fa;
+        }
+        form {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #dfe2e5;
+            border-radius: 6px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #d1d5da;
+            border-radius: 6px;
+            box-sizing: border-box; /* Important for padding and width */
+        }
+        .btn {
+            background-color: #2ea44f;
+            color: white;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .btn:hover {
+            background-color: #2c974b;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #586069;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Basic HTML</h1>
+            <p>A simple, clean HTML file.</p>
+        </header>
+
+        <main>
+            <h2>About This File</h2>
+            <p>This is a dummy HTML file. Its purpose is to act as a placeholder for a project you might be uploading to GitHub. You can use this file to practice the basic Git commands:</p>
+            <ul>
+                <li><code>git add index.html</code></li>
+                <li><code>git commit -m "Add initial HTML file"</code></li>
+                <li><code>git push</code></li>
+            </ul>
+
+            <h2>Key Features Included</h2>
+            <p>This file demonstrates a few common HTML elements, styled with CSS:</p>
+            <ol>
+                <li>Semantic HTML5 tags like <code>header tag</code>, <code>main tag</code>, and <code>footer tag</code>.</li>
+                <li>A styled data table.</li>
+                <li>A simple contact form.</li>
+                <li>An image and a hyperlink.</li>
+            </ol>
+
+            <h2>Sample Data Table</h2>
+            <p>Here's a sample table showing a list of project files.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>File Name</th>
+                        <th>Type</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>index.html</td>
+                        <td>HTML</td>
+                        <td>The main structure of the webpage.</td>
+                    </tr>
+                    <tr>
+                        <td>style.css</td>
+                        <td>CSS</td>
+                        <td>Handles the styling and layout.</td>
+                    </tr>
+                    <tr>
+                        <td>script.js</td>
+                        <td>JavaScript</td>
+                        <td>Adds interactivity to the page.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>A Simple Form</h2>
+            <p>Forms are a key part of any web application. This is just a visual demo; it doesn't send data anywhere.</p>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Your message here..."></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </main>
+        
+        <footer>
+            <p>© 2024 Your Name Here. Happy coding!</p>
+        </footer>
+    </div>
+
+</body>
+</html>
